@@ -30,7 +30,7 @@ const Index = () => {
             <span className="inline-block py-1 px-3 rounded-full text-xs font-medium bg-teal-500/10 text-teal-400 mb-4">
               About Me
             </span>
-            <h2 className="text-4xl font-bold mb-6">Who is {personalInfo.name.split(' ')[1]}?</h2>
+            <h2 className="text-4xl font-bold mb-6">Who is {personalInfo.name.split(' ')[0]}?</h2>
             <p className="max-w-3xl mx-auto text-muted-foreground">
               {personalInfo.tagline}
             </p>
@@ -66,10 +66,10 @@ const Index = () => {
                 <GraduationCap className="w-8 h-8 text-teal-400" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-center">
-                Computer Science
+                Devops Practices
               </h3>
               <p className="text-muted-foreground text-center">
-                B.Tech in Computer Science with a focus on software engineering, AI, and cloud technologies. Completed projects in machine learning and web development.
+                  Automated and scaled software delivery pipelines while ensuring security and observability using tools such as Docker, Kubernetes, Prometheus, Grafana, and Kibana.
               </p>
             </motion.div>
 

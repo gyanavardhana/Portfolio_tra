@@ -165,31 +165,31 @@ const LoadingScreen = () => (
 const Footer = () => {
   const socialLinks = [
     {
-      href: "https://github.com/Viswesh934",
+      href: "https://github.com/gyanavardhana",
       icon: FaGithub,
       label: "GitHub",
       color: "hover:text-[#ffd23f] hover:shadow-[0_0_20px_rgba(255,210,63,0.5)]"
     },
     {
-      href: "https://www.linkedin.com/in/sigireddy-viswesh-564119221/",
+      href: "https://www.linkedin.com/in/gyanavardhan-mamidisetti-194b6a242/",
       icon: FaLinkedin,
       label: "LinkedIn",
       color: "hover:text-[#4ecdc4] hover:shadow-[0_0_20px_rgba(78,205,196,0.5)]"
     },
     {
-      href: "https://x.com/SigireddyV32042",
+      href: "https://x.com/gyanavardhan",
       icon: FaTwitter,
       label: "Twitter",
       color: "hover:text-[#ff6b35] hover:shadow-[0_0_20px_rgba(255,107,53,0.5)]"
     },
     {
-      href: "mailto:sigireddyviswesh@gmail.com",
+      href: "mailto:gyanavardhanmamidisetti@gmail.com",
       icon: AiOutlineMail,
       label: "Email",
       color: "hover:text-[#f7931e] hover:shadow-[0_0_20px_rgba(247,147,30,0.5)]"
     },
     {
-      href: "https://medium.com/@sigireddyviswesh",
+      href: "https://medium.com/@gyanavardhanmamidisetti",
       icon: FaMedium,
       label: "Medium",
       color: "hover:text-white hover:shadow-[0_0_20px_rgba(255,255,255,0.4)]"
@@ -251,7 +251,7 @@ const Footer = () => {
             transition={{ delay: 0.4 }}
           >
             <p className="bg-gradient-to-r from-[#ffd23f] to-[#ff6b35] bg-clip-text text-transparent font-medium">
-              © {new Date().getFullYear()} Sigireddy Viswesh
+              © {new Date().getFullYear()} Gyanavardhan Mamidisetti
             </p>
             <p className="mt-1 text-xs text-gray-400">
               Solving problems with code and creativity
