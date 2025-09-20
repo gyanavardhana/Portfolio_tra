@@ -2,54 +2,8 @@ import { motion } from "framer-motion";
 import { Briefcase, GraduationCap } from "lucide-react";
 import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
+import { workExperience, nanodegree } from "@/constants";
 
-const experiences = [
-  {
-    company: "Deed Bee Social Ventures Pvt. Ltd.",
-    role: "Product Engineer",
-    duration: "Feb 2025 – Present",
-    stack: "MERN Stack, PostgreSQL, TRPC, Nitro Nuxt, AWS",
-    points: [
-      "Built a promotion engine and compliance tools integrated with SAP.",
-      "Developed scalable systems using connection pooling, queueing with pg.Pool.",
-      "Implemented frontend optimizations: lazy loading, debouncing, structured error handling.",
-      "Collaborated cross-functionally with Product, QA, and DevOps teams."
-    ],
-  },
-  {
-    company: "Hyperverge Academy",
-    role: "Full Stack Fellow",
-    duration: "Aug 2023 – Feb 2024",
-    stack: "MERN Stack, SDLC, Git, GitHub",
-    points: [
-      "Completed immersive full-stack development training.",
-      "Actively participated in daily stand-ups and mentorship sessions.",
-      "Contributed to collaborative, growth-oriented team projects."
-    ],
-  },
-  {
-    company: "Hydro Tribe",
-    role: "Backend Development Intern",
-    duration: "May 2023 – July 2023",
-    stack: "Python, Django, REST APIs",
-    points: [
-      "Designed backend solutions with Django for CRUD & user authentication.",
-      "Attended structured learning sessions covering OOP and advanced Django.",
-      "Helped develop scalable systems for hydroponics management."
-    ],
-  },
-];
-
-const education = {
-  title: "Nanodegree in Full Stack Development",
-  org: "Hyperverge Academy",
-  duration: "2023 – 2024",
-  highlights: [
-    "Mastered frontend and backend development using MERN stack.",
-    "Worked on real-world capstone projects under mentorship.",
-    "Practiced Agile, Git workflows, and deployment strategies."
-  ],
-};
 
 const Experience = () => {
   return (
@@ -73,7 +27,7 @@ const Experience = () => {
         </motion.div>
 
         <div className="space-y-12">
-          {experiences.map((exp, i) => (
+          {workExperience.map((exp, i) => (
             <motion.div
               key={exp.company}
               initial={{ opacity: 0, y: 20 }}
@@ -112,12 +66,12 @@ const Experience = () => {
         >
           <div className="flex items-center gap-3 mb-4">
             <GraduationCap className="text-brand-purple w-6 h-6" />
-            <h3 className="text-xl font-semibold text-white">{education.title}</h3>
+            <h3 className="text-xl font-semibold text-white">{nanodegree.title}</h3>
           </div>
-          <div className="text-muted-foreground mb-2">{education.org}</div>
-          <div className="text-sm text-gray-400 mb-4">{education.duration}</div>
+          <div className="text-muted-foreground mb-2">{nanodegree.org}</div>
+          <div className="text-sm text-gray-400 mb-4">{nanodegree.duration}</div>
           <ul className="list-disc ml-6 text-muted-foreground space-y-2">
-            {education.highlights.map((point, idx) => (
+            {nanodegree.highlights.map((point, idx) => (
               <li key={idx}>{point}</li>
             ))}
           </ul>

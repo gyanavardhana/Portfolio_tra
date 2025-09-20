@@ -6,21 +6,14 @@ import { Link } from "react-router-dom";
 import SkillCard from "./SkillCard";
 import ParticleBackground from "./ParticleBackground";
 import FloatingElements from "./FloatingElements";
-
-const phrases = [
-  "Full Stack Developer",
-  "AI Enthusiast",
-  "Your Next Project Partner",
-  "YouTube Content Creator",
-  "Freelancer",
-];
+import { personalInfo } from "@/constants";
 
 const HeroSection = () => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % phrases.length);
+      setIndex((prevIndex) => (prevIndex + 1) % personalInfo.animatedPhrases.length);
     }, 3000);
     return () => clearInterval(interval);
   }, []);
@@ -122,7 +115,7 @@ const HeroSection = () => {
                   backgroundSize: "200% 200%"
                 }}
               >
-                Sigireddy Viswesh
+                {personalInfo.name}
               </motion.span>
             </motion.h1>
             
@@ -133,7 +126,7 @@ const HeroSection = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               <AnimatedText 
-                text={phrases[index]} 
+                text={personalInfo.animatedPhrases[index]} 
                 className="text-2xl md:text-3xl font-medium text-muted-foreground"
               />
             </motion.div>
@@ -144,8 +137,7 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-            Full-stack developer specializing in scalable web apps and AI-powered tools. Proficient in TypeScript, React, Node.js, and PostgreSQL with a passion for clean, efficient code.
-
+            {personalInfo.bio.short}
             </motion.p>
             
             <motion.div 

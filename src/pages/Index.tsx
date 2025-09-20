@@ -5,75 +5,13 @@ import HeroSection from "@/components/HeroSection";
 import { motion } from "framer-motion";
 import { ArrowRight, Code, GraduationCap, Briefcase, Star, ExternalLink, Github } from "lucide-react";
 import { Link } from "react-router-dom";
+import { featuredProjects, techStack, personalInfo } from "@/constants";
 
 const Index = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const featuredProjects = [
-{
-  title: "Well BEE Health Platform",
-  description:
-    "Developed a scalable health platform supporting up to 1,000 users with therapy bots, Fitbit integration, and health tips. Includes anonymous group chat with sentiment analysis and detailed documentation for onboarding.",
-  image: "uploads/wellbee.svg",
-  tags: [
-    "ReactJS",
-    "NodeJS",
-    "ExpressJS",
-    "PostgresSQL",
-    "Postman",
-    "Gemini",
-    "Vultr",
-    "Docker",
-    "Fitbit API",
-  ],
-  link: "/projects",
-  code: "https://github.com/Viswesh934/WELLBEE",
-},
-    {
-      title: "PYRO (Predictive Maintenance and Risk Operations)",
-      description:
-        "A product maintenance prediction system with user management, product data upload, ML-based predictions, durability leaderboard, and email alerts for low-performing products. Features a comprehensive UI and detailed documentation.",
-      image: "uploads/Pyro.png",
-      tags: [
-        "Python",
-        "ReactJS",
-        "Machine Learning",
-        "Leaderboard",
-        "Email Alerts",
-        "User Management",
-        "API",
-        "Documentation",
-      ],
-      code: "https://github.com/Viswesh934/PYRO",
-      link: "/projects",
-    },
-    {
-      id: 6,
-      title: "ML Workflow for Scones Unlimited (AWS)",
-      description:
-        "Image classification system using DenseNet-169, PyTorch, and AWS pipeline (S3, SageMaker). Achieved 90% test accuracy.",
-      image: "uploads/Aws.png",
-      tags: ["AWS", "PyTorch", "SageMaker", "Machine Learning"],
-      code: "https://github.com/Viswesh934/ML-workflow-for-Scones-Unlimited-AWS",
-      link: "/projects",
-    },
-  ];
-
-  const techStack = [
-     { name: "JavaScript", proficiency: 90 },
-    { name: "Python", proficiency: 85},
-    { name: "React.js", proficiency: 80 },
-    { name: "Node.js", proficiency: 75 },
-    { name: "AWS", proficiency: 60 },
-    { name: "Machine Learning", proficiency: 70 },
-    { name: "CI/CD", proficiency: 65 },
-    { name: "Docker", proficiency: 70 },
-    { name: "Git", proficiency: 80 },
-    { name: "Tailwind CSS", proficiency: 75 },
-    { name: "Next.js", proficiency: 65 },
-  ];
 
   return (
     <Layout>
@@ -92,9 +30,9 @@ const Index = () => {
             <span className="inline-block py-1 px-3 rounded-full text-xs font-medium bg-teal-500/10 text-teal-400 mb-4">
               About Me
             </span>
-            <h2 className="text-4xl font-bold mb-6">Who is Viswesh?</h2>
+            <h2 className="text-4xl font-bold mb-6">Who is {personalInfo.name.split(' ')[1]}?</h2>
             <p className="max-w-3xl mx-auto text-muted-foreground">
-              I am a software engineer with a passion for building scalable, reliable systems. My expertise spans full-stack development, machine learning, and cloud technologies. I thrive on solving complex problems and delivering impactful solutions.
+              {personalInfo.tagline}
             </p>
           </motion.div>
 

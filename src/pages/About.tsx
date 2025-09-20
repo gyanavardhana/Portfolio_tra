@@ -4,24 +4,13 @@ import { motion } from "framer-motion";
 import { AnimatedText } from "@/components/AnimatedText";
 import { Code, BookOpen, User, Heart, Workflow, ThumbsUp } from "lucide-react";
 import InfoCard from "@/components/InfoCard";
+import { personalInfo, skills } from "@/constants";
 
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const skills = [
-    { name: "Python", level: "Advanced" },
-    { name: "JavaScript", level: "Advanced" },
-    { name: "React.js", level: "Intermediate" },
-    { name: "Node.js", level: "Intermediate" },
-    { name: "Next.js", level: "Intermediate" },
-    { name: "TRPC", level: "Intermediate" },
-    { name: "Machine Learning (PyTorch)", level: "Intermediate" },
-    { name: "PostgreSQL", level: "Intermediate" },
-    { name: "REST APIs", level: "Intermediate" },
-    { name: "Git", level: "Advanced" },
-  ];
 
   return (
     <Layout>
@@ -56,7 +45,7 @@ const About = () => {
                 <div className="relative w-full h-80 rounded-lg mb-8 overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-br from-brand-purple/20 to-blue-500/20" />
                   <img
-                    src="/uploads/me.jpg"
+                    src={personalInfo.profileImage}
                     alt="Profile"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -71,7 +60,7 @@ const About = () => {
               className="flex flex-col justify-center space-y-4 text-muted-foreground"
             >
               <p>
-                I'm <span className="text-brand-purple font-semibold">Sigireddy Viswesh</span>, a Computer Science graduate with hands-on experience building real-world enterprise systems and AI-driven tools.
+                I'm <span className="text-brand-purple font-semibold">{personalInfo.name}</span>, a Computer Science graduate with hands-on experience building real-world enterprise systems and AI-driven tools.
               </p>
               <p>
                 At <strong>Deed Bee Social Ventures Pvt. Ltd.</strong>, I led efforts on SAP data integration and scalable promotion & incentive systems. I've also worked with <strong>Hyperverge Academy</strong> and <strong>Hydro Tribe</strong>, strengthening my full stack and backend development expertise.

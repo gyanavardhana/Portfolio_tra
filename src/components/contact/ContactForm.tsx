@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import { Mail, MapPin } from "lucide-react"; // or use react-icons if preferred
+import { personalInfo } from "@/constants";
 
 const Contact = () => {
   const handleMailClick = () => {
     window.open(
-      `mailto:sigireddyviswesh@gmail.com?subject=Let's Connect&body=Hi Viswesh,%0D%0A%0D%0AI came across your work and would love to discuss...`,
+      `mailto:${personalInfo.email}?subject=Let's Connect&body=Hi ${personalInfo.name.split(' ')[1]},%0D%0A%0D%0AI came across your work and would love to discuss...`,
       "_blank"
     );
   };
@@ -40,7 +41,7 @@ const Contact = () => {
       {/* Location Info */}
       <div className="flex items-center mt-8 text-sm text-muted-foreground">
         <MapPin className="h-4 w-4 mr-2" />
-        Based in India — working remotely worldwide
+        Based in {personalInfo.locationShort} — working remotely worldwide
       </div>
     </motion.section>
   );

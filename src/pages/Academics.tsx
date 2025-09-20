@@ -5,72 +5,13 @@ import { AnimatedText } from "@/components/AnimatedText";
 import { BookOpen } from "lucide-react";
 import EducationCard from "@/components/EducationCard";
 import CertificationCard from "@/components/CertificationCard";
+import { education, certifications, courseHighlights } from "@/constants";
 
 const Academics = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const education = [
-    {
-      id: 1,
-      institution: "Aditya College of Engineering",
-      degree: "Bachelor of Technology (B.Tech)",
-      field: "Computer Science - IoT",
-      duration: "Nov 2021 - May 2025",
-      location: "Andhra Pradesh, India",
-      cgpa: "8.2 / 10",
-      details: [
-        "Focused on Internet of Things (IoT) and emerging technologies",
-        "Coursework includes Python, Machine Learning, Networks, and Systems",
-        "Participated in Amazon ML School and selected as AI-ML Scholar (2023)"
-      ]
-    }
-  ];
-
-  const certifications = [
-    {
-      id: 1,
-      name: "Google Associate Cloud Engineer",
-      issuer: "Google",
-      date: "2024",
-      description: "Credential demonstrating proficiency in deploying and managing cloud solutions on GCP."
-    },
-    {
-      id: 2,
-      name: "Microsoft Azure Administrator",
-      issuer: "Microsoft",
-      date: "2024",
-      description: "Certification in managing Azure identities, storage, governance, and virtual networks."
-    },
-    {
-      id: 3,
-      name: "IT Specialist: Python",
-      issuer: "Certiport",
-      date: "2023",
-      description: "Validated core Python programming skills and understanding of logic and syntax."
-    },
-    {
-      id: 4,
-      name: "Nanodegree: AI Programming with Python",
-      issuer: "Udacity",
-      date: "Oct 2023 - Jan 2024",
-      description: "Developed machine learning models and built deep learning foundations using PyTorch."
-    }
-  ];
-
-  const courseHighlights = [
-    "Data Structures and Algorithms",
-    "Artificial Intelligence",
-    "Machine Learning",
-    "Cloud Computing",
-    "IoT Systems & Sensors",
-    "Computer Networks",
-    "Operating Systems",
-    "Database Management Systems",
-    "Web Technologies",
-    "Software Engineering"
-  ];
 
   return (
     <Layout>
