@@ -30,7 +30,7 @@ const About = () => {
               <AnimatedText text="Get to Know Me" once />
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              I build scalable software systems that connect data, intelligence, and performance.
+              {personalInfo.tagline}
             </p>
           </motion.div>
 
@@ -59,18 +59,9 @@ const About = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="flex flex-col justify-center space-y-4 text-muted-foreground"
             >
-              <p>
-                I'm <span className="text-brand-purple font-semibold">{personalInfo.name}</span>, a Computer Science graduate with hands-on experience building real-world enterprise systems and AI-driven tools.
-              </p>
-              <p>
-                At <strong>Deed Bee Social Ventures Pvt. Ltd.</strong>, I led efforts on SAP data integration and scalable promotion & incentive systems. I've also worked with <strong>Hyperverge Academy</strong> and <strong>Hydro Tribe</strong>, strengthening my full stack and backend development expertise.
-              </p>
-              <p>
-                I hold certifications from Google, Microsoft, and Certiport, and have practical experience with Python, React, Node.js, PostgreSQL, and ML frameworks like PyTorch.
-              </p>
-              <p>
-                Outside of work, I enjoy mentoring, experimenting with new tech, and contributing to personal projects.
-              </p>
+              {personalInfo.bio.long.map((paragraph, index) => (
+                <p key={index} dangerouslySetInnerHTML={{ __html: paragraph }} />
+              ))}
             </motion.div>
           </div>
 

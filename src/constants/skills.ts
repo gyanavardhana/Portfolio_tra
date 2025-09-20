@@ -14,26 +14,26 @@ export const techStack: Skill[] = [
   { name: "Python", proficiency: 85 },
   { name: "React.js", proficiency: 80 },
   { name: "Node.js", proficiency: 75 },
-  { name: "AWS", proficiency: 60 },
+  { name: "Docker", proficiency: 80 },
+  { name: "Kubernetes", proficiency: 70 },
+  { name: "AWS", proficiency: 75 },
+  { name: "CI/CD", proficiency: 80 },
+  { name: "Git", proficiency: 85 },
   { name: "Machine Learning", proficiency: 70 },
-  { name: "CI/CD", proficiency: 65 },
-  { name: "Docker", proficiency: 70 },
-  { name: "Git", proficiency: 80 },
-  { name: "Tailwind CSS", proficiency: 75 },
   { name: "Next.js", proficiency: 65 }
 ];
 
 export const skills: SkillCategory[] = [
   { name: "Python", level: "Advanced" },
   { name: "JavaScript", level: "Advanced" },
-  { name: "React.js", level: "Intermediate" },
-  { name: "Node.js", level: "Intermediate" },
-  { name: "Next.js", level: "Intermediate" },
-  { name: "TRPC", level: "Intermediate" },
-  { name: "Machine Learning (PyTorch)", level: "Intermediate" },
-  { name: "PostgreSQL", level: "Intermediate" },
-  { name: "REST APIs", level: "Intermediate" },
-  { name: "Git", level: "Advanced" }
+  { name: "React.js", level: "Advanced" },
+  { name: "Node.js", level: "Advanced" },
+  { name: "Docker", level: "Advanced" },
+  { name: "Kubernetes", level: "Intermediate" },
+  { name: "AWS", level: "Intermediate" },
+  { name: "CI/CD", level: "Advanced" },
+  { name: "Git", level: "Advanced" },
+  { name: "PostgreSQL", level: "Intermediate" }
 ];
 
 export const courseHighlights = [

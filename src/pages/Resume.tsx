@@ -41,7 +41,7 @@ const Resume = () => {
               <AnimatedText text="Skilled. Reliable. Results-driven." once />
             </h1>
             <p className="max-w-2xl mx-auto text-lg text-muted-foreground">
-              I build production-grade software systems—whether it’s backend integrations, real-time promotion logic, or clean frontend dashboards. My focus is always on reliability, scalability, and impact.
+              I build production-grade software systems—whether it’s backend integrations, devops practices, or clean frontend dashboards. My focus is always on reliability, scalability, and impact.
             </p>
           </motion.div>
             <motion.div

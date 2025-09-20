@@ -26,21 +26,32 @@ export interface Certification {
 }
 
 export const workExperience: WorkExperience[] = [
-  {
-    company: "Deed Bee Social Ventures Pvt. Ltd.",
-    role: "Product Engineer",
-    duration: "Feb 2025 – Present",
-    stack: "MERN Stack, PostgreSQL, TRPC, Nitro Nuxt, AWS",
+    {
+    company: "Hyperverge.Inc",
+    role: "Software Developer Intern",
+    duration: "July 2025 – Present",
+    stack: "React, Node.js, Nest.js, Express.js, Redux, Mongodb, Python, Webhooks, Docker, Terraform, AWS Cloud",
     points: [
-      "Built a promotion engine and compliance tools integrated with SAP.",
-      "Developed scalable systems using connection pooling, queueing with pg.Pool.",
-      "Implemented frontend optimizations: lazy loading, debouncing, structured error handling.",
-      "Collaborated cross-functionally with Product, QA, and DevOps teams."
+      "Led efforts in building, developing, and releasing a Video KYC system across complex environments.",
+      "Resolved frontend, backend, deployment, and infrastructure-related issues to ensure smooth operations.",
+      "Authored technical specifications and implemented solutions, including system integrations and observability improvements.",
+      "Investigated and debugged support queries by analyzing issues and delivering effective fixes."
+    ]
+  },
+  {
+    company: "Hyperverge.Inc",
+    role: "Low Code Developer",
+    duration: "Jan 2025 – July 2025",
+    stack: "Web Components, Lit , Html, Css, Javascript, SQL, Metabase, Analytics",
+    points: [
+      "Worked on various KYC modules and developed reusable web components as a Low Code Developer.",
+      "Designed and implemented dashboards and analytics for KYC modules using SQL and Metabase.",
+      "Collaborated with cross-functional teams to deliver high-quality software solutions."
     ]
   },
   {
     company: "Hyperverge Academy",
-    role: "Full Stack Fellow",
+    role: "Full Stack Developer Fellow",
     duration: "Aug 2023 – Feb 2024",
     stack: "MERN Stack, SDLC, Git, GitHub",
     points: [
@@ -70,7 +81,7 @@ export const education: Education[] = [
     field: "Computer Science - IoT",
     duration: "Nov 2021 - May 2025",
     location: "Andhra Pradesh, India",
-    cgpa: "8.2 / 10",
+    cgpa: "8.09 / 10",
     details: [
       "Focused on Internet of Things (IoT) and emerging technologies",
       "Coursework includes Python, Machine Learning, Networks, and Systems",

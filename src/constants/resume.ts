@@ -10,19 +10,19 @@ export interface ResumeCertification {
 }
 
 export const resumeHighlights: ResumeHighlight[] = [
-  {
-    title: "Backend Integration Specialist",
-    description: "Led and built scalable backend services integrating SAP and internal systems using PostgreSQL, Drizzle ORM, and REST APIs.",
-    icon: "Database"
-  },
-  {
-    title: "Promotion Engine Developer",
-    description: "Developed dynamic promotion and incentive systems handling slabs, schemes, and achievements using advanced SQL and business logic.",
+    {
+    title: "Full Stack Developer",
+    description: "Experienced in building scalable applications across React, React Native, Node.js, and Python with strong expertise in databases like PostgreSQL and MongoDB.",
     icon: "Cpu"
   },
   {
+    title: "DevOps & Cloud Engineer",
+    description: "Hands-on with Docker, Terraform, CI/CD pipelines, and cloud platforms (AWS, GCP) to streamline deployments, improve observability, and ensure reliability.",
+    icon: "Database"
+  },
+  {
     title: "Full Stack Problem Solver",
-    description: "Delivering features end-to-end across frontend (React, Next.js) and backend (Node.js, Drizzle) with real-time validation, reporting, and UX polish.",
+    description: "Delivering features end-to-end across frontend (React, Next.js) and backend (Node.js, Prisma, Drizzle) with real-time validation, reporting, and UX polish.",
     icon: "Code"
   }
 ];
